@@ -12,4 +12,15 @@ return {
   { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.lua" },
+  -- { import = "astrocommunity.pack.toml" },
+
+  -- Editing support
+  { import = "astrocommunity.editing-support.neogen" },
+
+  -- Git
+  { import = "astrocommunity.git.neogit" },
+
+  -- Motion
+  { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.motion.nvim-surround" },
 }
