@@ -28,4 +28,29 @@ return {
   -- Motion
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
+
+  -- Code runner
+  { import = "astrocommunity.code-runner.overseer-nvim" },
+
+  -- Note taking
+  { import = "astrocommunity.note-taking.neorg" },
+  {
+    "nvim-neorg/neorg",
+    run = ":Neorg sync-parsers",
+    opts = {
+      load = {
+        ["core.defaults"] = {},
+        ["core.dirman"] = {
+          config = {
+            workspaces = {
+              notes = "~/notes",
+              work = "~/notes/work",
+              journal = "~/notes/journal",
+              book = "~/notes/book",
+            },
+          },
+        },
+      },
+    },
+  },
 }

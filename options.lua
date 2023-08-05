@@ -49,5 +49,14 @@ return function(local_vim)
   local_vim.g.ui_notifications_enabled = true
   local_vim.g.resession_enabled = false
 
+  vim.api.nvim_create_user_command("TakeNote", function()
+    vim.cmd "cd ~/notes"
+    vim.cmd "Neorg workspace notes"
+  end, { nargs = 0 })
+  vim.api.nvim_create_user_command("Journal", function()
+    vim.cmd "TakeNote"
+    vim.cmd "Neorg journal today"
+  end, { nargs = 0 })
+
   return local_vim
 end
