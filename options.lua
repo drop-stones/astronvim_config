@@ -24,6 +24,7 @@
 --     resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
 --   },
 -- }
+
 -- If you need more control, you can use the function()...end notation
 return function(local_vim)
   local_vim.opt.relativenumber = true
@@ -48,15 +49,6 @@ return function(local_vim)
   local_vim.g.icons_enabled = true
   local_vim.g.ui_notifications_enabled = true
   local_vim.g.resession_enabled = false
-
-  vim.api.nvim_create_user_command("TakeNote", function()
-    vim.cmd "cd ~/notes"
-    vim.cmd "Neorg workspace notes"
-  end, { nargs = 0 })
-  vim.api.nvim_create_user_command("Journal", function()
-    vim.cmd "TakeNote"
-    vim.cmd "Neorg journal today"
-  end, { nargs = 0 })
 
   return local_vim
 end
