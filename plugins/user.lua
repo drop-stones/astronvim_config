@@ -1,3 +1,4 @@
+local utils = require "astronvim.utils"
 return {
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
@@ -9,4 +10,9 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "drop-stones/ime-switch-win.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    event = "BufEnter,BufLeave,InsertEnter,InsertLeave",
+  },
 }
