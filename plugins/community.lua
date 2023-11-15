@@ -6,7 +6,7 @@ return {
 
   -- GUI config
   { import = "astrocommunity.colorscheme.nightfox-nvim" },
-  { import = "astrocommunity.utility.transparent-nvim" },
+  { import = "astrocommunity.color.transparent-nvim" },
 
   -- LSP config
   { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
@@ -22,7 +22,7 @@ return {
   { import = "astrocommunity.editing-support.neogen" },
 
   -- Git
-  { import = "astrocommunity.git.neogit" },
+  -- { import = "astrocommunity.git.neogit" },
 
   -- Motion
   { import = "astrocommunity.motion.leap-nvim" },
@@ -33,23 +33,4 @@ return {
 
   -- Note taking
   { import = "astrocommunity.note-taking.neorg" },
-  {
-    "nvim-neorg/neorg",
-    run = ":Neorg sync-parsers",
-    opts = {
-      load = {
-        ["core.defaults"] = {},
-        ["core.dirman"] = {
-          config = {
-            workspaces = {
-              notes = "~/notes",
-              work = "~/notes/work",
-              journal = "~/notes/journal",
-              book = "~/notes/book",
-            },
-          },
-        },
-      },
-    },
-  },
 }

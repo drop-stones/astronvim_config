@@ -13,6 +13,6 @@ return {
   {
     "drop-stones/ime-switch-win.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
-    event = "BufEnter,BufLeave,InsertEnter,InsertLeave",
+    event = "BufEnter",
   },
 }

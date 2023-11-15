@@ -1,4 +1,2 @@
 -- Set colorscheme to use
-return {
-  "carbonfox",
-}
+return "carbonfox"
