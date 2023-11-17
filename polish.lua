@@ -15,6 +15,11 @@ return {
   --   },
   -- }
 
+  -- notify
+  require("notify").setup {
+    background_colour = "#000000",
+  },
+
   -- norg
   vim.api.nvim_create_user_command("Note", function()
     vim.cmd "cd ~/notes"
