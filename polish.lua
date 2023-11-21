@@ -20,6 +20,9 @@ return {
     background_colour = "#000000",
   },
 
+  -- nvim-dap-projects
+  require("nvim-dap-projects").search_project_config(),
+
   -- norg
   vim.api.nvim_create_user_command("Note", function()
     vim.cmd "cd ~/notes"
