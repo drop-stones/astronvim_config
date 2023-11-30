@@ -27,13 +27,14 @@
 
 -- If you need more control, you can use the function()...end notation
 return function(local_vim)
-  local_vim.opt.relativenumber = true
+  local_vim.opt.relativenumber = false
   local_vim.opt.number = true
   local_vim.opt.spell = false
   local_vim.opt.signcolumn = "auto"
   local_vim.opt.wrap = false
   local_vim.opt.cursorline = false
   local_vim.opt.exrc = true
+  local_vim.opt.timeoutlen = 100
 
   if vim.fn.has "win32" then
     local_vim.opt.shell = vim.fn.executable "zsh" == 1 and "zsh" or "powershell"
