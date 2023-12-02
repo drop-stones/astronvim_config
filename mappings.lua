@@ -34,6 +34,9 @@ return {
     ["<leader>:i"] = { "<cmd>OverseerInfo<cr>", desc = "OverseerInfo" },
     ["<leader>:l"] = { "<cmd>OverseerRestartLast<cr>", desc = "OverseerRestartLast" },
 
+    -- Zoxide
+    ["<leader>z"] = { "<cmd>Telescope zoxide list<cr>", desc = "Zoxide List" },
+
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },

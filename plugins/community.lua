@@ -25,6 +25,9 @@ return {
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
 
+  -- Fuzzy-finder
+  { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
+
   -- Code runner
   { import = "astrocommunity.code-runner.overseer-nvim" },
 
