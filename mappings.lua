@@ -32,9 +32,23 @@ return {
     ["<leader>:o"] = { "<cmd>OverseerOpen<cr>", desc = "OverseerOpen" },
     ["<leader>:t"] = { "<cmd>OverseerToggle<cr>", desc = "OverseerToggle" },
     ["<leader>:i"] = { "<cmd>OverseerInfo<cr>", desc = "OverseerInfo" },
+    ["<leader>:l"] = { "<cmd>OverseerRestartLast<cr>", desc = "OverseerRestartLast" },
 
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+  },
+  i = {
+    -- Better escape
+    ["kj"] = { "<esc>" },
+  },
+  v = {
+    -- Better escape
+    ["jk"] = { "<esc>" },
+    ["kj"] = { "<esc>" },
+
+    -- Quick shift
+    ["<"] = { "<gv" },
+    [">"] = { ">gv" },
   },
   t = {
     -- setting a mapping to false will disable it
@@ -42,10 +56,14 @@ return {
     ["<esc>"] = { "<C-\\><C-n>" },
     ["jk"] = { "<C-\\><C-n>" },
     ["kj"] = { "<C-\\><C-n>" },
-    ["<C-h>"] = { "<Cmd>wincmd h<CR>" },
-    ["<C-j>"] = { "<Cmd>wincmd j<CR>" },
-    ["<C-k>"] = { "<Cmd>wincmd k<CR>" },
-    ["<C-l>"] = { "<Cmd>wincmd l<CR>" },
+    ["<C-h>"] = { "<cmd>wincmd h<cr>" },
+    ["<C-j>"] = { "<cmd>wincmd j<cr>" },
+    ["<C-k>"] = { "<cmd>wincmd k<cr>" },
+    ["<C-l>"] = { "<cmd>wincmd l<cr>" },
     ["<C-w>"] = { "<C-\\><C-n><C-w>" },
+    ["<C-Up>"] = { "<cmd>resize +2<cr>" },
+    ["<C-Down>"] = { "<cmd>resize -2<cr>" },
+    ["<C-Left>"] = { "<cmd>vertical resize +2<cr>" },
+    ["<C-Right>"] = { "<cmd>vertical resize -2<cr>" },
   },
 }
