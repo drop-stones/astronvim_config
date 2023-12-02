@@ -33,4 +33,7 @@ return {
 
   -- Note taking
   { import = "astrocommunity.note-taking.neorg" },
+
+  -- Workflow
+  { import = "astrocommunity.workflow.hardtime-nvim" },
 }

@@ -37,6 +37,13 @@ return {
     -- Zoxide
     ["<leader>z"] = { "<cmd>Telescope zoxide list<cr>", desc = "Zoxide List" },
 
+    -- Hardtime
+    ["<leader>H"] = { name = "Hardtime" },
+    ["<leader>He"] = { "<cmd>Hardtime enable<cr>", desc = "Enable hardtime.nvim" },
+    ["<leader>Hd"] = { "<cmd>Hardtime disable<cr>", desc = "Disable hardtime.nvim" },
+    ["<leader>Ht"] = { "<cmd>Hardtime toggle<cr>", desc = "Toggle hardtime.nvim" },
+    ["<leader>Hr"] = { "<cmd>Hardtime report<cr>", desc = "Report hints" },
+
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
