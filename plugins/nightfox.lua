@@ -20,5 +20,10 @@ return {
         },
       },
     },
+    groups = {
+      carbonfox = {
+        Substitute = { bg = "#303030", fg = "#ff6347" },
+      },
+    },
   },
 }
