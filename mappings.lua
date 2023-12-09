@@ -47,10 +47,6 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
-  i = {
-    -- Better escape
-    ["kj"] = { "<esc>" },
-  },
   v = {
     -- Better escape
     ["jk"] = { "<esc>" },

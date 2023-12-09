@@ -35,6 +35,10 @@ return function(local_vim)
   local_vim.opt.cursorline = false
   local_vim.opt.exrc = true
   local_vim.opt.timeoutlen = 100
+  local_vim.opt.expandtab = true
+  local_vim.opt.tabstop = 2
+  local_vim.opt.softtabstop = 2
+  local_vim.opt.shiftwidth = 2
 
   if vim.fn.has "win32" then
     local_vim.opt.shell = vim.fn.executable "zsh" == 1 and "zsh" or "powershell"
