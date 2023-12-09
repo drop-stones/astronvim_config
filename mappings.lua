@@ -41,6 +41,9 @@ return {
     -- Zoxide
     ["<leader>z"] = { "<cmd>Telescope zoxide list<cr>", desc = "Zoxide List" },
 
+    -- Project
+    ["<leader>P"] = { "<cmd>Telescope projects<cr>", desc = "Project" },
+
     -- Hardtime
     ["<leader>H"] = { name = "Hardtime" },
     ["<leader>He"] = { "<cmd>Hardtime enable<cr>", desc = "Enable hardtime.nvim" },
