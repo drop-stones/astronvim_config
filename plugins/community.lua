@@ -19,7 +19,10 @@ return {
   { import = "astrocommunity.pack.toml" },
 
   -- Editing support
-  { import = "astrocommunity.editing-support.neogen" },
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
+
+  -- Indent
+  { import = "astrocommunity.indent.indent-blankline-nvim" },
 
   -- Motion
   { import = "astrocommunity.motion.nvim-surround" },
