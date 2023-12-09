@@ -33,6 +33,9 @@ return {
   -- Code runner
   { import = "astrocommunity.code-runner.overseer-nvim" },
 
+  -- Git
+  { import = "astrocommunity.git.diffview-nvim" },
+
   -- Note taking
   { import = "astrocommunity.note-taking.neorg" },
 
