@@ -27,7 +27,7 @@
 
 -- If you need more control, you can use the function()...end notation
 return function(local_vim)
-  local_vim.opt.relativenumber = false
+  local_vim.opt.relativenumber = true
   local_vim.opt.number = true
   local_vim.opt.spell = false
   local_vim.opt.signcolumn = "auto"
