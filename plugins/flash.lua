@@ -2,7 +2,11 @@ return {
   "folke/flash.nvim",
   event = "VeryLazy",
   vscode = true,
-  opts = {},
+  opts = {
+    label = {
+      min_pattern_length = 2,
+    },
+  },
   keys = {
     {
       "m",
